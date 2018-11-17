@@ -1,6 +1,7 @@
 V <- round(runif(20) * 10)
-
-#1. Insertion_sort
+#######################################
+############1. Insertion_sort #########
+#######################################
 
 insertion_sort <- function(Vector, n){
   if(n == 0) stop("No element to sort")
@@ -18,7 +19,10 @@ insertion_sort <- function(Vector, n){
 
 insertion_sort(V, 1)
 
-#2. Bubble_sort
+#########################################
+############ 2. Bubble_sort #############
+########################################
+
 Buble_sort <- function(Vector, n){
   if(n == 0) stop("No element to sort")
   for(i in 1:length(Vector)){
@@ -38,7 +42,9 @@ Buble_sort <- function(Vector, n){
 
 Bubble_sort(V, 1)
 
-#3. selection_sort
+###############################################
+##############3. selection_sort ##############
+##############################################
 Selection_sort <- function(Vector, n){
   if(n == 0) stop("No element to sort")
   for(i in seq_along(Vector)){
@@ -52,8 +58,9 @@ Selection_sort <- function(Vector, n){
 
 Selection_sort(V, 1)
 
-
-#4. merge_sort
+#############################################
+##############4. merge_sort##################
+############################################
 Merge_Sort <- function(V) {
   if(length(V) == 0) stop("Not enough elements to sort")
   
